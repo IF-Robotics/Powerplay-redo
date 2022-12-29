@@ -6,9 +6,9 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 public class Drivetrain extends SubsystemBase {
-    double backLeft, backRight, frontLeft, frontRight = 0;
+    private double backLeft, backRight, frontLeft, frontRight = 0;
 
-    public DcMotor back_Right, back_Left, front_Right, front_Left;
+    private DcMotor back_Right, back_Left, front_Right, front_Left;
 
     public Drivetrain(HardwareMap hardwareMap) {
         back_Right = hardwareMap.get(DcMotor.class, "back_Right");
